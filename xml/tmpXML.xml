@@ -1,0 +1,15 @@
+<application>
+    <appname>TemperatureApp</appname>          <!-- 应用名称 -->
+    <apptype>iot</apptype>                <!-- 设备类型 gateway(多设备) / iot(单设备,仅识别第一个设备)-->
+    <connmode>tcp</connmode>            <!-- 连接方式 tcp-->
+    <protocol>Temperature</protocol>  <!-- 协议解析选择 -->
+    <connport>17112</connport>                   <!-- 服务监听端口-->
+    <equip>                             <!-- 设备1 -->
+        <equipname>temp1</equipname>      <!-- 设备名称 -->
+        <feature>12345678</feature>                        <!-- 多设备识别特征 -->
+        <option>                        <!-- 设备其他属性   -->
+            <key>testTime</key>
+            <value>20190917</value>
+        </option>
+    </equip>
+</application>

@@ -1,0 +1,23 @@
+<application>
+    <appname>testApp</appname>          <!-- 应用名称 -->
+    <apptype>gateway</apptype>                <!-- 设备类型 gateway(多设备) / iot(单设备,仅识别第一个设备)-->
+    <connmode>tcp</connmode>            <!-- 连接方式 tcp-->
+    <protocol>ElectricMeter</protocol>  <!-- 协议解析选择 -->
+    <connport>17111</connport>                   <!-- 服务监听端口-->
+    <equip>                             <!-- 设备1 -->
+        <equipname>e1</equipname>      <!-- 设备名称 -->
+        <feature>123456781234</feature>                        <!-- 多设备识别特征 -->
+        <option>                        <!-- 设备其他属性   -->
+            <key>owner</key>
+            <value>jerry</value>
+        </option>
+        <option>                        <!-- 设备其他属性   -->
+            <key>testTime</key>
+            <value>20190912</value>
+        </option>
+    </equip>
+    <equip>                             <!-- 设备1 -->
+        <equipname>e2</equipname>      <!-- 设备名称 -->
+        <feature>161237432754</feature>                        <!-- 多设备识别特征 -->
+    </equip>
+</application>
