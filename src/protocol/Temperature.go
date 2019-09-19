@@ -71,7 +71,7 @@ func (e *TemperatureHandle) UplinkParse (input []byte) (gotcp.Packet, error){
 
 	r := hex.EncodeToString(input)
 	fmt.Println(r)
-
+	//温度解析 - 需要区分是否是注册包 -
 	return NewTemperatureUpPacket("test"),nil
 }
 
